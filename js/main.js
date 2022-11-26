@@ -134,7 +134,14 @@ dark_mode.addEventListener('click', () => {
     document.documentElement.setAttribute("data-them", setAtt)
     window.localStorage.setItem('them', setAtt)
     span_dark_mode.classList.contains('fa-sun') ? span_dark_mode.className = ('fas fa-moon sp-dark dark') : span_dark_mode.className=('fas fa-sun sp-dark')
-    
+    window.localStorage.removeItem('main-color')
+    window.localStorage.removeItem('text-color')
+    window.localStorage.removeItem('section-color')
+    window.localStorage.removeItem('whit-color')
+document.documentElement.style.cssText
+
+
+
 })
 
 
@@ -155,4 +162,83 @@ list_videos.forEach(e => {
 
 random_video.addEventListener('click', () => {
     ifram_video.src = list_videos[Math.floor(Math.random() * list_videos.length)].dataset.src;
+})
+
+//Show Setting Bar
+let sid_bar = document.getElementById('setting')
+let sit_btn = document.getElementById('sitt_btn');
+
+sit_btn.addEventListener('click', () => {
+    if (sid_bar.style.left === "0px") {
+        sid_bar.style.left = "-166px" 
+        sit_btn.style.cssText ="animation-name:rotate;animation-duration:4s;animation-iteration-count:infinite;animation-timing-function: linear; "
+    } else {
+        sid_bar.style.left = "0px";
+        sit_btn.style.animation ="none"
+    } 
+})
+sid_bar.onmouseleave = () => {
+    setTimeout(() => {
+        sid_bar.style.left = "-166px"
+        sit_btn.style.cssText ="animation-name:rotate;animation-duration:4s;animation-iteration-count:infinite;animation-timing-function: linear; "
+    },3000)
+}
+//Change Color of Site
+let inp = document.querySelectorAll('.color input')
+
+//Set Main Color
+if (window.localStorage.getItem('main-color')) {
+    document.documentElement.style.setProperty('--main-color', window.localStorage.getItem('main-color'));
+    inp[0].value = window.localStorage.getItem('main-color')
+}
+inp[0].addEventListener("change",() => {
+    document.documentElement.style.setProperty('--main-color', inp[0].value)
+    window.localStorage.setItem('main-color',inp[0].value)
+})
+
+//Set Section Color
+if (window.localStorage.getItem('section-color')) {
+    document.documentElement.style.setProperty('--section-background', window.localStorage.getItem('section-color'));
+    inp[1].value = window.localStorage.getItem('section-color')
+}
+inp[1].addEventListener("change",() => {
+    document.documentElement.style.setProperty('--section-background', inp[1].value)
+        window.localStorage.setItem('section-color',inp[1].value)
+})
+
+//Set Text Color
+if (window.localStorage.getItem('text-color')) {
+    document.documentElement.style.setProperty('--text-color', window.localStorage.getItem('text-color'));
+     inp[2].value = window.localStorage.getItem('text-color')
+}
+inp[2].addEventListener("change",() => {
+    document.documentElement.style.setProperty('--text-color', inp[2].value)
+        window.localStorage.setItem('text-color',inp[2].value)
+})
+
+//Set whit Color
+if (window.localStorage.getItem('whit-color')) {
+    document.documentElement.style.setProperty('--whit-color', window.localStorage.getItem('whit-color'))
+    inp[3].value = window.localStorage.getItem('whit-color')
+}
+inp[3].addEventListener("change",() => {
+    document.documentElement.style.setProperty('--whit-color', inp[3].value)
+        window.localStorage.setItem('whit-color',inp[3].value)
+})
+
+
+//Reset Defaulte Color Of Sit
+
+let btn_default = document.getElementById('default-setting')
+
+btn_default.addEventListener('click', () => {
+    // document.documentElement.style.setProperty("--main-color","#2196f3")
+    // document.documentElement.style.setProperty("--section-background","#ececec")
+    // document.documentElement.style.setProperty("--text-color","black")
+    // document.documentElement.style.setProperty("--whit-color", "white")
+    window.localStorage.removeItem('main-color')
+    window.localStorage.removeItem('text-color')
+    window.localStorage.removeItem('section-color')
+    window.localStorage.removeItem('whit-color')
+    window.location.reload()
 })
