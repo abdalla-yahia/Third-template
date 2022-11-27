@@ -2579,6 +2579,7 @@ textarea {
     border-bottom: 1px solid var(--ddd-color);
     color: var(--main-color);
     max-width: 95%;
+    resize:none
 }
 
 input::placeholder,
