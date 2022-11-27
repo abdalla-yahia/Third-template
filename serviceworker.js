@@ -61,7 +61,7 @@ const assets =
     "/imgs/work-steps-3.png.webp",
     "/imgs/work-steps.png.webp",
     "/images/icons/icon-192x192.png",
-    "/images/icons/icon-256x256.png",
+
     "/images/icons/icon-384x384.png",
     "/images/icons/icon-512x512.png",
     "/webfonts/fa-brands-400.eot",
@@ -94,3 +94,10 @@ self.addEventListener("fetch", fetchEvent => {
     })
   )
 })
+
+
+        // {
+        //     "src": "/images/icons/icon-256x256.png",
+        //     "sizes": "256x256",
+        //     "type": "image/png"
+        // },
