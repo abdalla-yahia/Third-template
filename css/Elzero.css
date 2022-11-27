@@ -2515,8 +2515,18 @@ h3 {
     align-items: center;
     position: relative;
     max-width: 100%;
+    animation: changeBG 5s infinite linear;
+    -webkit-animation: changeBG 5s infinite linear;
 }
-
+@keyframes changeBG {
+    0%,100%
+    {
+        background-image: url("../imgs/discount-background1.jpg");
+    }
+    50%{
+        background-image: url("../imgs/discount-background2.jpg");
+    }
+}
 .discount .container .picture::before {
     content: '';
     position: absolute;
