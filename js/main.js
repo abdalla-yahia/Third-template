@@ -138,8 +138,8 @@ dark_mode.addEventListener('click', () => {
     window.localStorage.removeItem('text-color')
     window.localStorage.removeItem('section-color')
     window.localStorage.removeItem('whit-color')
-document.documentElement.style.cssText
-
+// document.documentElement.style.cssText
+document.documentElement.setAttribute('dir',"rtl")
 
 
 })
@@ -232,13 +232,11 @@ inp[3].addEventListener("change",() => {
 let btn_default = document.getElementById('default-setting')
 
 btn_default.addEventListener('click', () => {
-    // document.documentElement.style.setProperty("--main-color","#2196f3")
-    // document.documentElement.style.setProperty("--section-background","#ececec")
-    // document.documentElement.style.setProperty("--text-color","black")
-    // document.documentElement.style.setProperty("--whit-color", "white")
     window.localStorage.removeItem('main-color')
     window.localStorage.removeItem('text-color')
     window.localStorage.removeItem('section-color')
     window.localStorage.removeItem('whit-color')
     window.location.reload()
 })
+
+// console.log();

@@ -1,0 +1,22 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Reval Web Application",
+  "short_name": "Reval",
+  "icons": [{
+    "src": "./imgs/favicon.png.webp",
+    "sizes": "64x64",
+    "type": "image/webp"
+  },
+  { "src": "icon/android-icon-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }],
+  "scope": "/",
+  "id": "superracer",
+  "start_url": "./serviceworker.js",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "aliceblue",
+  "background_color": "white"
+}

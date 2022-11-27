@@ -8,7 +8,7 @@
 
 [data-them="dark"]:root {
     --main-color: rgb(255, 255, 255);
-    --main-color-alt: white --main-transition: 0.3s;
+    --main-color-alt: white;
     --second-transation: 0.5s;
     --third-transation: 0.7s;
     --main-padding-top: 100px;
@@ -27,7 +27,7 @@
 
 :root {
     --main-color: #2196f3;
-    --main-color-alt: #1787e0;
+    --main-color-alt: #006ec5;
     --main-transition: 0.3s;
     --second-transation: 0.5s;
     --third-transation: 0.7s;
@@ -38,7 +38,7 @@
     --ddd-color: #ddd;
     --f4f4-color: #f4f4f4;
     --whit-color: white;
-    --p777-color: #777;
+    --p777-color: #514747;
     --text-color: black;
     --ddd2-color: rgba(221, 221, 221, 0.200);
     --main-shdow: 2px 5px 10px rgba(0, 0, 0, .15);
@@ -61,6 +61,7 @@ body {
     font-family: "Cairo", sans-serif;
     position: relative;
     background-color: var(--whit-color);
+    direction: ltr;
 }
 
 section {
@@ -130,12 +131,12 @@ ul {
         max-width: 200px;
     }
 
-    .main-title h1 {
+    .main-title h2 {
         font-size: 20px;
     }
 }
 
-.main-title h1 {
+.main-title h2 {
     padding: 10px 8px;
     border: 2px solid black;
     text-transform: uppercase;
@@ -149,7 +150,7 @@ ul {
     -o-transition: var(--second-transation);
 }
 
-.main-title h1::before {
+.main-title h2::before {
     content: '';
     position: absolute;
     left: -15%;
@@ -162,7 +163,7 @@ ul {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-color: var(--main-color);
+    background-color:var(--main-color);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -175,7 +176,7 @@ ul {
     z-index: -1;
 }
 
-.main-title h1::after {
+.main-title h2::after {
     content: '';
     position: absolute;
     right: -15%;
@@ -201,12 +202,12 @@ ul {
     z-index: -1;
 }
 
-.main-title h1:hover {
+.main-title h2:hover {
     color: var(--whit-color);
     border-color: var(--whit-color);
 }
 
-.main-title h1:hover::after {
+.main-title h2:hover::after {
     right: 0;
     width: 50%;
     height: 100%;
@@ -217,7 +218,7 @@ ul {
     -o-border-radius: 0%;
 }
 
-.main-title h1:hover::before {
+.main-title h2:hover::before {
     left: 0;
     width: 50%;
     height: 100%;
@@ -963,7 +964,7 @@ p {
 
 .articles .container .articles-card .read-more a,
 i {
-    color: var(--main-color);
+    color: var(--main-color-alt);
 }
 
 .articles .container .articles-card:hover {
@@ -1158,11 +1159,11 @@ i {
 
 .features .container .features-card .features-text a {
     position: relative;
-    color: #f44036;
+    color: #d42a20;
     font-size: 18px;
     padding: 10px 25px;
     margin-bottom: 15px;
-    border: 2px solid #f44036;
+    border: 2px solid #d5281f;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1230,11 +1231,11 @@ i {
 
 .features .container .features-card.col-2 .features-text h1,
 .features .container .features-card.col-2 .features-text a {
-    border-color: #009688;
+    border-color: #1e7b73;
 }
 
 .features .container .features-card.col-2 .features-text a {
-    color: #009688;
+    color: #1e7b73;
     position: relative;
     z-index: 11;
 }
@@ -1246,11 +1247,11 @@ i {
 
 .features .container .features-card.col-3 .features-text h1,
 .features .container .features-card.col-3 .features-text a {
-    border-color: #03a9f4;
+    border-color: #13698f;
 }
 
 .features .container .features-card.col-3 .features-text a {
-    color: #03a9f4;
+    color: #13698f;
     position: relative;
     z-index: 11;
 }
@@ -1975,7 +1976,7 @@ h3 {
 
 .latest-events form input[type="submit"] {
     color: var(--whit-color);
-    background-color: var(--main-color);
+    background-color: var(--main-color-alt);
     padding: 20px;
 }
 
@@ -2055,7 +2056,7 @@ h3 {
     top: 0%;
     right: 15px;
     filter: blur(1.5px);
-    -webkit-filter: grayscale(1);
+    -webkit-filter: blur(1.5px);
 }
 
 .pricing .img-1.two {
@@ -2063,7 +2064,7 @@ h3 {
     bottom: 0%;
     left: 15px;
     filter: grayscale(1);
-    -webkit-filter: blur(1.5px);
+    -webkit-filter: grayscale(1);
 }
 
 .container .plan-box {
@@ -2118,13 +2119,15 @@ h3 {
 .container .plan-box:hover::after {
     width: 100%;
 }
-
-.container .plan-box:nth-child(2) {
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
+@media (min-width:1200px) {
+    
+    .container .plan-box:nth-child(2) {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
 }
 
 .container .plan-box:nth-child(2) span.sign {
@@ -2134,7 +2137,7 @@ h3 {
     width: 180px;
     height: 40px;
     padding-right: 20px;
-    background-color: var(--main-color);
+    background-color: var(--main-color-alt);
     z-index: 1;
     text-align: center;
     line-height: 40px;
@@ -2222,7 +2225,7 @@ h3 {
 
 .container .plan-box a {
     border: 3px solid var(--main-color);
-    color: var(--main-color);
+    color: var(--main-color-alt);
     padding: 15px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -2342,7 +2345,7 @@ h3 {
 
 }
 
-.top-video .container .video-preview h5 {
+.top-video .container .video-preview h3 {
     background-color: var(--whit-color);
     width: 100%;
     padding: 20px;
@@ -2386,7 +2389,7 @@ h3 {
 ######################## Start Awesome Section   #############
 ###############################################################*/
 .awesome {
-    background-image: url('../imgs/stats.jpg');
+    background-image: url('../imgs/stats.jpg.webp');
     position: relative;
 }
 
@@ -2506,7 +2509,7 @@ h3 {
 
 .discount .container .picture {
     padding: 50px 0 0 0;
-    background-image: url("../imgs/discount-background1.jpg");
+    background-image: url("../imgs/discount-background1.jpg.webp");
     background-repeat: repeat;
     background-size: cover;
     display: flex;
@@ -2521,10 +2524,10 @@ h3 {
 @keyframes changeBG {
     0%,100%
     {
-        background-image: url("../imgs/discount-background1.jpg");
+        background-image: url("../imgs/discount-background1.jpg.webp");
     }
     50%{
-        background-image: url("../imgs/discount-background2.jpg");
+        background-image: url("../imgs/discount-background2.jpg.webp");
     }
 }
 .discount .container .picture::before {
@@ -2587,7 +2590,7 @@ textarea {
     background-color: var(--fa-color);
     caret-color: var(--main-color);
     border-bottom: 1px solid var(--ddd-color);
-    color: var(--main-color);
+    color: var(--main-color-alt);
     max-width: 95%;
     resize:none
 }
@@ -2598,7 +2601,7 @@ textarea::placeholder {
 }
 
 .discount .container .form-discount form input[type="submit"] {
-    background-color: var(--main-color);
+    background-color: var(--main-color-alt);
     color: var(--whit-color);
     font-size: 20px;
     margin-top: 40px;
@@ -2649,6 +2652,7 @@ footer .container .footer-social h2 {
 
 footer .container .footer-social p {
     max-width: 95%;
+    color: var(--f4f4-color);
 }
 
 footer .container .footer-social h2:hover {
@@ -2708,7 +2712,7 @@ footer .container .important ul li:hover {
 }
 
 footer .container .important ul li:hover a {
-    color: rgb(189, 188, 188);
+    color: var(--f4f4-color);
 }
 
 footer .container .important ul li::before {
@@ -2720,7 +2724,7 @@ footer .container .important ul li::before {
 }
 
 footer .container .important ul li a {
-    color: var(--p777-color);
+    color: var(--f4f4-color);
     font-weight: 400;
     font-size: 18px;
 }
@@ -2735,7 +2739,7 @@ footer .container .footer-contact ul li {
 }
 
 footer .container .footer-contact ul li span {
-    color: var(--p777-color);
+    color: var(--f4f4-color);
 }
 
 @media (max-width:350px) {
@@ -2770,7 +2774,7 @@ footer .created-by {
     text-align: center;
     border-top: 1px solid var(--p777-color);
     padding: 25px;
-    color: var(--p777-color);
+    color: var(--f4f4-color);
 }
 
 footer .created-by a {
