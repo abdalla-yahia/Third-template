@@ -1,3 +1,7 @@
+
+
+
+
 let links = document.getElementsByTagName('li')
 let other_Links = document.querySelector('.other-links')
 links[3].addEventListener('mouseenter', () => {
@@ -239,4 +243,15 @@ btn_default.addEventListener('click', () => {
     window.location.reload()
 })
 
-// console.log();
+
+//######################################
+
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+        navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then(res => console.log("service worker registered",res))
+        .catch(err => console.log("service worker not registered", err))
+    })
+}
+//######################################
