@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" data-them="light" >
+<html lang="en" data-them="light">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Reval website to allow .....">
-        
+
+        <link rel="manifest" href="manifest.webmanifest">
+        <link rel="icon" href="./imgs/favicon.png.webp">
+        <link rel="stylesheet" href="./css/Elzero.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/normalize.css">
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
         rel="stylesheet" />
-        <link rel="manifest" href="manifest.webmanifest">
-        <link rel="icon" href="./imgs/favicon.png.webp">
-        <link rel="stylesheet" href="./css/Elzero.css">
-        <link rel="stylesheet" href="./css/all.min.css">
-        <link rel="stylesheet" href="./css/normalize.css">
         <!-- ios support -->
         <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
         <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
         <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
         <meta name="theme-color" content="#db4938" />
-        <script src="app.js"></script>
+        <script src="app.js" defer></script>
         <title>Elzero | Template Three</title>
     </head>
+
     <body>
         <div class="scroll-button">
             <i class="fas fa-angle-double-up fa-2x"></i>
@@ -50,7 +52,7 @@
                     <ul>
                         <li>
                             <i class="far fa-comments
-                                    fa-fw"></i><a href="#testimonials" aria-label="fa"> Testimonials</a>
+                                fa-fw"></i><a href="#testimonials" aria-label="fa"> Testimonials</a>
                         </li>
                         <li>
                             <i class="far fa-user fa-fw"></i><a href="#team" aria-label="fa">
@@ -61,17 +63,18 @@
                         </li>
                         <li>
                             <i class="far fa-check-circle
-                                    fa-fw"></i><a href="#our-skills" aria-label="fa"> Our Skills</a>
+                                fa-fw"></i><a href="#our-skills" aria-label="fa"> Our Skills</a>
                         </li>
                         <li>
                             <i class="far fa-clipboard
-                                    fa-fw"></i><a href="#work-steps" aria-label="fa"> How It Works</a>
+                                fa-fw"></i><a href="#work-steps" aria-label="fa"> How It Works</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
                             <i class="far fa-calendar-alt
-                                    fa-fw"></i><a href="#events" aria-label="fa"> Events</a>
+                                fa-fw"></i><a href="#events" aria-label="fa">
+                                Events</a>
                         </li>
                         <li>
                             <i class="fas fa-server fa-fw"></i><a href="#pricing" aria-label="fa">
@@ -79,7 +82,8 @@
                         </li>
                         <li>
                             <i class="far fa-play-circle
-                                    fa-fw"></i><a href="#video" aria-label="fa"> Top Videos</a>
+                                fa-fw"></i><a href="#video" aria-label="fa"> Top
+                                Videos</a>
                         </li>
                         <li>
                             <i class="far fa-chart-bar fa-fw"></i><a href="#awesome" aria-label="fa">
@@ -97,27 +101,31 @@
         <!--Start Landing Page-->
         <section class="landing-page">
             <div class="setting" id="setting">
-                    <div class="setting-parent">
+                <div class="setting-parent">
                     <div class="span">
-                        <label for="in1" style="cursor: pointer;">Main Color </label>
+                        <label for="in1" style="cursor: pointer;">Main Color
+                        </label>
                         <div class="color">
                             <input type="color" id="in1" value="#2196f3">
                         </div>
                     </div>
                     <div class="span">
-                        <label for="in2" style="cursor: pointer;">Section Color </label>
+                        <label for="in2" style="cursor: pointer;">Section Color
+                        </label>
                         <div class="color">
                             <input type="color" id="in2" value="#ececec">
                         </div>
                     </div>
                     <div class="span">
-                        <label for="in3" style="cursor: pointer;">Text Color </label>
+                        <label for="in3" style="cursor: pointer;">Text Color
+                        </label>
                         <div class="color">
                             <input type="color" id="in3" value="#000000">
                         </div>
                     </div>
                     <div class="span">
-                        <label for="in4" style="cursor: pointer;">Body Color </label>
+                        <label for="in4" style="cursor: pointer;">Body Color
+                        </label>
                         <div class="color">
                             <input type="color" id="in4" value="#ffffff">
                         </div>
@@ -125,21 +133,22 @@
                     <div class="span">
                         <button id="default-setting">Reset Defaulte</button>
                     </div>
-                    </div>
-                    <i class="fas fa-sun  fa-2x" id="sitt_btn"></i>
                 </div>
+                <i class="fas fa-sun fa-2x" id="sitt_btn"></i>
+            </div>
             <div class="container">
-                <div class="dark-mode " ><i class="fas sp-dark"></i></div>
-                
+                <div class="dark-mode "><i class="fas sp-dark"></i></div>
+
                 <div class="landing-text">
                     <h1>Welcome, To <span>Elzero</span> World</h1>
-                    <p>Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
+                    <p>Here Iam gonna share everything about my life. Books Iam
+                        reading, Games Iam Playing, Stories and Events</p>
                 </div>
                 <img src="./imgs/landing-image.png.webp" alt="img" width="" height="">
             </div>
             <a href="#articles" class="go-down" aria-label="fa">
                 <i class="fas fa-angle-double-down fa-2x"></i>
-                </a>
+            </a>
         </section>
         <!--End Landing Page-->
 
@@ -153,10 +162,11 @@
                     <img src="./imgs/cat-01.jpg.webp" alt="img" width="100%" height="100%">
                     <div class="articles-text">
                         <h3>Test Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Reprehenderit</p>
                     </div>
                     <div class="read-more">
-                        <a href="#" aria-label="fa">Read More</a> 
+                        <a href="#" aria-label="fa">Read More</a>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                 </div>
@@ -164,10 +174,11 @@
                     <img src="./imgs/cat-02.jpg.webp" alt="img" width="100%" height="100%">
                     <div class="articles-text">
                         <h3>Test Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Reprehenderit</p>
                     </div>
                     <div class="read-more">
-                        <a href="#" aria-label="fa">Read More</a> 
+                        <a href="#" aria-label="fa">Read More</a>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                 </div>
@@ -175,10 +186,11 @@
                     <img src="./imgs/cat-03.jpg.webp" alt="img" width="100%" height="100%">
                     <div class="articles-text">
                         <h3>Test Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Reprehenderit</p>
                     </div>
                     <div class="read-more">
-                        <a href="#" aria-label="fa">Read More</a> 
+                        <a href="#" aria-label="fa">Read More</a>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                 </div>
@@ -186,10 +198,11 @@
                     <img src="./imgs/cat-04.jpg.webp" alt="img" width="100%" height="100%">
                     <div class="articles-text">
                         <h3>Test Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Reprehenderit</p>
                     </div>
                     <div class="read-more">
-                        <a href="#" aria-label="fa">Read More</a> 
+                        <a href="#" aria-label="fa">Read More</a>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                 </div>
@@ -197,10 +210,11 @@
                     <img src="./imgs/cat-05.jpg.webp" alt="img" width="100%" height="100%">
                     <div class="articles-text">
                         <h3>Test Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Reprehenderit</p>
                     </div>
                     <div class="read-more">
-                        <a href="#" aria-label="fa">Read More</a> 
+                        <a href="#" aria-label="fa">Read More</a>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                 </div>
@@ -208,10 +222,11 @@
                     <img src="./imgs/cat-06.jpg.webp" alt="img" width="100%" height="100%">
                     <div class="articles-text">
                         <h3>Test Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Reprehenderit</p>
                     </div>
                     <div class="read-more">
-                        <a href="#" aria-label="fa">Read More</a> 
+                        <a href="#" aria-label="fa">Read More</a>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                 </div>
@@ -219,10 +234,11 @@
                     <img src="./imgs/cat-07.jpg.webp" alt="img" width="100%" height="100%">
                     <div class="articles-text">
                         <h3>Test Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Reprehenderit</p>
                     </div>
                     <div class="read-more">
-                        <a href="#" aria-label="fa">Read More</a> 
+                        <a href="#" aria-label="fa">Read More</a>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                 </div>
@@ -230,10 +246,11 @@
                     <img src="./imgs/cat-08.jpg.webp" alt="img" width="100%" height="100%">
                     <div class="articles-text">
                         <h3>Test Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Reprehenderit</p>
                     </div>
                     <div class="read-more">
-                        <a href="#" aria-label="fa">Read More</a> 
+                        <a href="#" aria-label="fa">Read More</a>
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                 </div>
@@ -299,7 +316,8 @@
                     </div>
                     <div class="features-text ">
                         <h2>Quality</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit harum hic veniam eligendi minima</p>
                         <a href="#" aria-label="fa">More</a>
                     </div>
                 </div>
@@ -309,7 +327,8 @@
                     </div>
                     <div class="features-text ">
                         <h2>Time</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit harum hic veniam eligendi minima</p>
                         <a href="#" aria-label="fa">More</a>
                     </div>
                 </div>
@@ -319,7 +338,8 @@
                     </div>
                     <div class="features-text ">
                         <h2>Passion</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit harum hic veniam eligendi minima</p>
                         <a href="#" aria-label="fa">More</a>
                     </div>
                 </div>
@@ -344,7 +364,9 @@
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores et reiciendis voluptatum, amet est natus quaerat
+                        ducimus</p>
                 </div>
                 <div class="testimonials-card">
                     <img src="./imgs/avatar-02.png.webp" alt="" width="100%" height="100%">
@@ -357,7 +379,9 @@
                         <i class="filled fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores et reiciendis voluptatum, amet est natus quaerat
+                        ducimus</p>
                 </div>
                 <div class="testimonials-card">
                     <img src="./imgs/avatar-03.png.webp" alt="img" width="100%" height="100%">
@@ -370,7 +394,9 @@
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores et reiciendis voluptatum, amet est natus quaerat
+                        ducimus</p>
                 </div>
                 <div class="testimonials-card">
                     <img src="./imgs/avatar-04.png.webp" alt="img" width="100%" height="100%">
@@ -383,7 +409,9 @@
                         <i class="filled fas fa-star"></i>
                         <i class="filled fas fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores et reiciendis voluptatum, amet est natus quaerat
+                        ducimus</p>
                 </div>
                 <div class="testimonials-card">
                     <img src="./imgs/avatar-05.png.webp" alt="img" width="100%" height="100%">
@@ -396,7 +424,9 @@
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores et reiciendis voluptatum, amet est natus quaerat
+                        ducimus</p>
                 </div>
                 <div class="testimonials-card">
                     <img src="./imgs/avatar-06.png.webp" alt="img" width="100%" height="100%">
@@ -409,7 +439,9 @@
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores et reiciendis voluptatum, amet est natus quaerat
+                        ducimus</p>
                 </div>
             </div>
         </section>
@@ -425,10 +457,14 @@
                     <div class="team-img">
                         <img src="./imgs/team-01.jpg.webp" alt="img" width="100%" height="100%">
                         <ul>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-linkedin-in"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-youtube"></i></a></li>
                         </ul>
                     </div>
                     <div class="team-text">
@@ -440,10 +476,14 @@
                     <div class="team-img">
                         <img src="./imgs/team-02.jpg.webp" alt="img" width="100%" height="100%">
                         <ul>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-linkedin-in"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-youtube"></i></a></li>
                         </ul>
                     </div>
                     <div class="team-text">
@@ -455,10 +495,14 @@
                     <div class="team-img">
                         <img src="./imgs/team-03.jpg.webp" alt="img" width="100%" height="100%">
                         <ul>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-linkedin-in"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-youtube"></i></a></li>
                         </ul>
                     </div>
                     <div class="team-text">
@@ -470,10 +514,14 @@
                     <div class="team-img">
                         <img src="./imgs/team-04.jpg.webp" alt="img" width="100%" height="100%">
                         <ul>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-linkedin-in"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-youtube"></i></a></li>
                         </ul>
                     </div>
                     <div class="team-text">
@@ -485,10 +533,14 @@
                     <div class="team-img">
                         <img src="./imgs/team-05.png.webp" alt="img" width="100%" height="100%">
                         <ul>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-linkedin-in"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-youtube"></i></a></li>
                         </ul>
                     </div>
                     <div class="team-text">
@@ -500,10 +552,14 @@
                     <div class="team-img">
                         <img src="./imgs/team-06.png.webp" alt="img" width="100%" height="100%">
                         <ul>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#" aria-label="fa"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-linkedin-in"></i></a></li>
+                            <li><a href="#" aria-label="fa"><i class="fab
+                                        fa-youtube"></i></a></li>
                         </ul>
                     </div>
                     <div class="team-text">
@@ -595,26 +651,26 @@
                     <img src="./imgs/skills.png.webp" alt="skills" width="" height="">
                 </div>
                 <div class="our-skills-progres">
-                <div class="skills-progres"> HTML
-                    <div class="prog">
-                        <span style="width: 0%;" class="span-prog" data-prog="90%"></span>
+                    <div class="skills-progres"> HTML
+                        <div class="prog">
+                            <span style="width: 0%;" class="span-prog" data-prog="90%"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-progres"> css
-                    <div class="prog">
-                        <span style="width: 0%;" class="span-prog" data-prog="85%"></span>
+                    <div class="skills-progres"> css
+                        <div class="prog">
+                            <span style="width: 0%;" class="span-prog" data-prog="85%"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-progres"> java script
-                    <div class="prog">
-                        <span style="width: 0%;" class="span-prog" data-prog="70%"></span>
+                    <div class="skills-progres"> java script
+                        <div class="prog">
+                            <span style="width: 0%;" class="span-prog" data-prog="70%"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-progres"> python
-                    <div class="prog">
-                        <span style="width: 0%;" class="span-prog" data-prog="92%"></span>
+                    <div class="skills-progres"> python
+                        <div class="prog">
+                            <span style="width: 0%;" class="span-prog" data-prog="92%"></span>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -630,27 +686,33 @@
                     <img src="./imgs/work-steps.png.webp" alt="work" width="100%" height="100%">
                 </div>
                 <div class="how-work-big-box">
-                <div class="how-box">
-                    <img src="./imgs/work-steps-1.png.webp" alt="work" width="80" height="80">
-                    <div class="how-box-text">
-                        <h3>Business Analysis</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel</p>
+                    <div class="how-box">
+                        <img src="./imgs/work-steps-1.png.webp" alt="work" width="80" height="80">
+                        <div class="how-box-text">
+                            <h3>Business Analysis</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Enim nesciunt obcaecati
+                                quisquam quis laborum recusandae debitis vel</p>
+                        </div>
                     </div>
-                </div>
-                <div class="how-box">
-                    <img src="./imgs/work-steps-2.png.webp" alt="work" width="80" height="80">
-                    <div class="how-box-text">
-                        <h3>Architecture</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel</p>
+                    <div class="how-box">
+                        <img src="./imgs/work-steps-2.png.webp" alt="work" width="80" height="80">
+                        <div class="how-box-text">
+                            <h3>Architecture</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Enim nesciunt obcaecati
+                                quisquam quis laborum recusandae debitis vel</p>
+                        </div>
                     </div>
-                </div>
-                <div class="how-box">
-                    <img src="./imgs/work-steps-3.png.webp" alt="work" width="80" height="80">
-                    <div class="how-box-text">
-                        <h3>Developement</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel</p>
+                    <div class="how-box">
+                        <img src="./imgs/work-steps-3.png.webp" alt="work" width="80" height="80">
+                        <div class="how-box-text">
+                            <h3>Developement</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Enim nesciunt obcaecati
+                                quisquam quis laborum recusandae debitis vel</p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -686,12 +748,16 @@
                     </div>
                     <div class="tex-box">
                         <h2>Tech Masters Event <span class="next-year">0</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et vero tenetur doloremque iusto ut adipisci
+                            quam ratione aliquam excepturi nulla in harum,
+                            veritatis porro</p>
                     </div>
                 </div>
             </div>
             <form action="">
-                <input type="email" name="" id="" placeholder="Enter Your Email">
+                <input type="email" name="" id="" placeholder="Enter Your
+                    Email">
                 <input type="submit" value="Subscribe">
             </form>
         </section>
@@ -699,8 +765,8 @@
 
         <!--Start Pricing Plane Section-->
         <section class="pricing" id="pricing">
-            <img src="./imgs/dots.png.webp" class="img-1 one" alt="img" width="" height=""/>
-            <img src="./imgs/dots.png.webp" class="img-1 two" alt="img" width="" height=""/>
+            <img src="./imgs/dots.png.webp" class="img-1 one" alt="img" width="" height="" />
+            <img src="./imgs/dots.png.webp" class="img-1 two" alt="img" width="" height="" />
             <div class="main-title">
                 <h2>pricing plane</h2>
             </div>
@@ -708,7 +774,7 @@
                 <div class="plan-box">
                     <div class="pric-head">
                         <h2>Basic</h2>
-                        <img src="imgs/hosting-basic.png.webp" alt="img"  width="100%" height="100%"/>
+                        <img src="imgs/hosting-basic.png.webp" alt="img" width="100%" height="100%" />
                         <h3>$15</h3>
                         <span>Per Month</span>
                     </div>
@@ -727,7 +793,7 @@
                     <span class="sign">Most Popular</span>
                     <div class="pric-head">
                         <h2>Advanced</h2>
-                        <img src="imgs/hosting-advanced.png.webp" alt="img" width="100%" height="100%"/>
+                        <img src="imgs/hosting-advanced.png.webp" alt="img" width="100%" height="100%" />
                         <h3>$25</h3>
                         <span>Per Month</span>
                     </div>
@@ -745,7 +811,7 @@
                 <div class="plan-box">
                     <div class="pric-head">
                         <h2>Professional</h2>
-                        <img src="imgs/hosting-professional.png.webp" alt="img" width="100%" height="100%"/>
+                        <img src="imgs/hosting-professional.png.webp" alt="img" width="100%" height="100%" />
                         <h3>$45</h3>
                         <span>Per Month</span>
                     </div>
@@ -760,7 +826,7 @@
                     </div>
                     <a href="#" aria-label="fa">Choose Plane</a>
                 </div>
-                
+
             </div>
         </section>
         <!--End Pricing Plane Section-->
@@ -777,18 +843,34 @@
                         <i class="fas fa-random"></i>
                     </div>
                     <ul class="list-of-videos">
-                        <li><a href="#iframe" aria-label="fa" data-src="https://www.youtube.com/embed/RnrM5asZ2aI?autoplay=1">How To Create Sub Domain</a><br/>05:18</li>
-                        <li><a href="#iframe" aria-label="fa" data-src="https://www.youtube.com/embed/3zt1gtmkuQY?autoplay=1">Upload Your Website To the Host</a><br/>03:18</li>
-                        <li><a href="#iframe" aria-label="fa" data-src="https://www.youtube.com/embed/_C_jeBVmH3E?autoplay=1">Everything About The Virtual Hosts</a><br/>05:25</li>
-                        <li><a href="#iframe" aria-label="fa" data-src="https://www.youtube.com/embed/LdJbP0NbFRw?autoplay=1">How To Monitor Your Website</a><br/>04:16</li>
-                        <li><a href="#iframe" aria-label="fa" data-src="https://www.youtube.com/embed/BAPLPXX0ZsQ?autoplay=1">Uncharted Beating The Last Boss</a><br/>07:48</li>
-                        <li><a href="#iframe" aria-label="fa" data-src="https://www.youtube.com/embed/D91qgP5wxAg?autoplay=1">Ys Oath In Felghana Overview</a><br/>03:12</li>
-                        <li><a href="#iframe" aria-label="fa" data-src="https://www.youtube.com/embed/o1fuo9lmams?autoplay=1">Ys Series All Games Ending</a><br/>08:10</li>
+                        <li><a href="#iframe" aria-label="fa"
+                                data-src="https://www.youtube.com/embed/RnrM5asZ2aI?autoplay=1">How
+                                To Create Sub Domain</a><br />05:18</li>
+                        <li><a href="#iframe" aria-label="fa"
+                                data-src="https://www.youtube.com/embed/3zt1gtmkuQY?autoplay=1">Upload
+                                Your Website To the Host</a><br />03:18</li>
+                        <li><a href="#iframe" aria-label="fa"
+                                data-src="https://www.youtube.com/embed/_C_jeBVmH3E?autoplay=1">Everything
+                                About The Virtual Hosts</a><br />05:25</li>
+                        <li><a href="#iframe" aria-label="fa"
+                                data-src="https://www.youtube.com/embed/LdJbP0NbFRw?autoplay=1">How
+                                To Monitor Your Website</a><br />04:16</li>
+                        <li><a href="#iframe" aria-label="fa"
+                                data-src="https://www.youtube.com/embed/BAPLPXX0ZsQ?autoplay=1">Uncharted
+                                Beating The Last Boss</a><br />07:48</li>
+                        <li><a href="#iframe" aria-label="fa"
+                                data-src="https://www.youtube.com/embed/D91qgP5wxAg?autoplay=1">Ys
+                                Oath In Felghana Overview</a><br />03:12</li>
+                        <li><a href="#iframe" aria-label="fa"
+                                data-src="https://www.youtube.com/embed/o1fuo9lmams?autoplay=1">Ys
+                                Series All Games Ending</a><br />08:10</li>
                     </ul>
                 </div>
                 <div class="video-preview">
-                    <iframe src="./imgs/video-preview.jpg.webp" title="video" scrolling="no" frameborder="0" allow="autoplay"></iframe>
-                    <h3>Everything About The Virtual Hosts</h3>
+                    <iframe src="./imgs/video-preview.jpg.webp" title="video" scrolling="no" frameborder="0"
+                        allow="autoplay"></iframe>
+                    <h3>Everything About The Virtual
+                        Hosts</h3>
                 </div>
             </div>
         </section>
@@ -801,22 +883,26 @@
             </div>
             <div class="container">
                 <div class="awsome-box">
-                    <i class="far fa-user fa-2x fa-fw"></i>
+                    <i class="far fa-user fa-2x
+                                                    fa-fw"></i>
                     <h3 class="awesome-count" data-count="150">0</h3>
                     <span>Clients</span>
                 </div>
                 <div class="awsome-box">
-                    <i class="fas fa-code fa-2x fa-fw"></i>
+                    <i class="fas fa-code fa-2x
+                                                    fa-fw"></i>
                     <h3 class="awesome-count" data-count="135">0</h3>
                     <span>Projects</span>
                 </div>
                 <div class="awsome-box">
-                    <i class="fas fa-globe-asia fa-2x fa-fw"></i>
+                    <i class="fas fa-globe-asia
+                                                    fa-2x fa-fw"></i>
                     <h3 class="awesome-count" data-count="50">0</h3>
                     <span>Countries</span>
                 </div>
                 <div class="awsome-box">
-                    <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
+                    <i class="far fa-money-bill-alt
+                                                    fa-2x fa-fw"></i>
                     <h3 class="awesome-count" data-count="500">0</h3>
                     <span>Money</span>
                 </div>
@@ -830,17 +916,32 @@
                 <div class="picture">
                     <div class="discount-text">
                         <h2>We Have A Discount</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi asperiores consectetur, recusandae ratione provident necessitatibus, cumque delectus commodi fuga praesentium beatae. Totam vel similique laborum dicta aperiam odit doloribus corporis.</p>
+                        <p>Lorem ipsum dolor sit
+                            amet consectetur,
+                            adipisicing elit.
+                            Excepturi asperiores
+                            consectetur, recusandae
+                            ratione provident
+                            necessitatibus, cumque
+                            delectus commodi fuga
+                            praesentium beatae.
+                            Totam vel similique
+                            laborum dicta aperiam
+                            odit doloribus corporis.</p>
                     </div>
-                    <img src="./imgs/discount.png.webp" alt="img" width="100%" height="100%"/>
+                    <img src="./imgs/discount.png.webp" alt="img" width="100%" height="100%" />
                 </div>
                 <div class="form-discount">
                     <h2>Request A Discount</h2>
                     <form action="">
-                        <input type="text" name="" id="" placeholder="Your Name">
-                        <input type="email" name="" id="" placeholder="Your Email">
-                        <input type="tel" name="" id="" placeholder="Your Phone">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Tell Us About Your Needs"></textarea>
+                        <input type="text" name="" id="" placeholder="Your
+                                                        Name">
+                        <input type="email" name="" id="" placeholder="Your
+                                                        Email">
+                        <input type="tel" name="" id="" placeholder="Your
+                                                        Phone">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tell Us
+                                                        About Your Needs"></textarea>
                         <input type="submit" value="Send">
                     </form>
                 </div>
@@ -854,34 +955,56 @@
                 <div class="footer-social">
                     <h2>Elzero</h2>
                     <ul>
-                        <li><a href="#" aria-label="fa"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#" aria-label="fa"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" aria-label="fa"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#" aria-label="fa"><i class="fab
+                                                                fa-facebook-f"></i></a></li>
+                        <li><a href="#" aria-label="fa"><i class="fab
+                                                                fa-twitter"></i></a></li>
+                        <li><a href="#" aria-label="fa"><i class="fab
+                                                                fa-youtube"></i></a></li>
                     </ul>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur</p>
+                    <p>Lorem ipsum, dolor sit amet
+                        consectetur adipisicing
+                        elit. Temporibus nulla rem,
+                        dignissimos iste aspernatur</p>
                 </div>
                 <div class="important">
                     <ul>
-                        <li><a href="#" aria-label="fa">Important Link 1</a></li>
-                        <li><a href="#" aria-label="fa">Important Link 2</a></li>
-                        <li><a href="#" aria-label="fa">Important Link 3</a></li>
-                        <li><a href="#" aria-label="fa">Important Link 4</a></li>
-                        <li><a href="#" aria-label="fa">Important Link 5</a></li>
+                        <li><a href="#" aria-label="fa">Important
+                                Link 1</a></li>
+                        <li><a href="#" aria-label="fa">Important
+                                Link 2</a></li>
+                        <li><a href="#" aria-label="fa">Important
+                                Link 3</a></li>
+                        <li><a href="#" aria-label="fa">Important
+                                Link 4</a></li>
+                        <li><a href="#" aria-label="fa">Important
+                                Link 5</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <ul>
                         <li>
-                            <i class="fas fa-map-marker-alt fa-fw"></i>
-                            <span style="padding-left:10px;">Egypt, Giza, Inside The Sphinx, Room Number 220</span>
+                            <i class="fas
+                                                            fa-map-marker-alt
+                                                            fa-fw"></i>
+                            <span style="padding-left:10px;">Egypt,
+                                Giza, Inside The
+                                Sphinx, Room Number
+                                220</span>
                         </li>
                         <li>
-                            <i class="far fa-clock fa-fw"></i>
-                            <span style="padding-left:10px;">Business Hours: From 10:00 To 18:00</span>
+                            <i class="far fa-clock
+                                                            fa-fw"></i>
+                            <span style="padding-left:10px;">Business
+                                Hours: From 10:00 To
+                                18:00</span>
                         </li>
                         <li>
-                            <i class="fas fa-phone-volume fa-fw"></i>
-                            <span style="padding-left:10px;">+20123456789</span> <span style="padding-left:10px;">+20198765432</span>
+                            <i class="fas
+                                                            fa-phone-volume
+                                                            fa-fw"></i>
+                            <span style="padding-left:10px;">+20123456789</span>
+                            <span style="padding-left:10px;">+20198765432</span>
                         </li>
                     </ul>
                 </div>
@@ -893,12 +1016,18 @@
                     <img src="./imgs/gallery-05.jpg.webp" alt="footer" width="100%" height="100%" />
                     <img src="./imgs/gallery-06.png.webp" alt="footer" width="100%" height="100%" />
                 </div>
-            
+
             </div>
-            <div class="created-by">&copy;2022 <span><a href="https://elzero.org/" aria-label="fa">Elzero</a></span> All Right Reserved <br/> Developed by <a href="mailto:abdalla_y2007@yahoo.com?subject=I need you to do a project" aria-label="fa">Abdalla Yahia </a> 2022 </div>
+            <div class="created-by">&copy;2022
+                <span><a href="https://elzero.org/" aria-label="fa">Elzero</a></span>
+                All Right Reserved <br /> Developed
+                by <a href="mailto:abdalla_y2007@yahoo.com?subject=I
+                                                    need you to do a project" aria-label="fa">Abdalla
+                    Yahia </a> 2022
+            </div>
         </footer>
         <!--End Footer-->
-        <script src="./js/main.js"></script>
+        <script src="./js/main.js" defer></script>
     </body>
 
 </html>
