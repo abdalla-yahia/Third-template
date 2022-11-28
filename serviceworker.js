@@ -33,7 +33,7 @@ const assets =
     "/imgs/features-03.jpg.webp",
     "/imgs/gallery-01.png.webp",
     "/imgs/gallery-02.png.webp",
-     "/imgs/gallery-03.jpg.webp",
+    "/imgs/gallery-03.jpg.webp",
     "/imgs/gallery-04.png.webp",
     "/imgs/gallery-05.jpg.webp",
     "/imgs/gallery-06.png.webp",
@@ -41,7 +41,6 @@ const assets =
     "/imgs/hosting-basic.png.webp",
     "/imgs/hosting-professional.png.webp",
     "/imgs/landing-image.png.webp",
- 
     "/imgs/megamenu.png.webp",
     "/imgs/skills.png.webp",
     "/imgs/stats.jpg.webp",
